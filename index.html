@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Book local parcel deliveries, shopping errands and pre-booked transport around Mabopane with Tiyang's Local Delivery & Errands Service.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <title>Tiyang's Delivery & Errands</title>
+  <style>
+    :root{--black:#101010;--panel:#1b1b1b;--yellow:#ffd21f;--white:#fff;--muted:#bdbdbd;--line:#393939;--green:#25d366}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:#101010;color:var(--white);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.45}
+    a{color:inherit} .wrap{max-width:760px;margin:auto;padding:0 16px 32px} .topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:12px}.brand{font-weight:900;letter-spacing:.3px;font-size:18px;line-height:1.05}.brand span{display:block;color:var(--yellow);font-size:12px;letter-spacing:1.2px;margin-top:5px}.pill{font-size:12px;color:var(--yellow);border:1px solid #6b5910;padding:7px 10px;border-radius:99px;white-space:nowrap}
+    .hero{position:relative;overflow:hidden;border-radius:22px;background:#252525;border:1px solid var(--line);min-height:350px;display:flex;align-items:flex-end}.hero img{position:absolute;width:100%;height:100%;inset:0;object-fit:cover;object-position:center 48%;opacity:.66}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.28) 35%,#101010 100%)}.hero-copy{position:relative;z-index:1;padding:24px;width:100%}.eyebrow{color:var(--yellow);font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(30px,7vw,48px);line-height:.98;margin:8px 0 12px;letter-spacing:-1.5px}.hero p{margin:0 0 18px;color:#f0f0f0;max-width:460px}.btn{border:0;display:inline-flex;justify-content:center;align-items:center;gap:9px;text-decoration:none;font-weight:850;border-radius:12px;padding:13px 16px;cursor:pointer;font-size:15px}.btn-yellow{background:var(--yellow);color:#111}.btn-wa{background:var(--green);color:#071b0d}.btn-dark{background:#262626;color:#fff;border:1px solid #444}.hero-actions{display:flex;flex-wrap:wrap;gap:9px}
+    .section{margin-top:25px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:12px}.section h2{font-size:22px;margin:0;letter-spacing:-.4px}.section-head p{color:var(--muted);font-size:12px;margin:0}.services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.service{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px 12px;min-height:142px;cursor:pointer;text-align:left;color:var(--white)}.service:focus,.service.selected{outline:2px solid var(--yellow);border-color:var(--yellow)}.service .emoji{font-size:26px}.service h3{font-size:14px;line-height:1.15;margin:9px 0 5px}.service p{font-size:12px;color:var(--muted);margin:0}.hint{color:var(--muted);font-size:12px;margin:9px 2px 0}
+    .form-card{background:#191919;border:1px solid var(--line);border-radius:20px;padding:17px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}label{font-size:12px;font-weight:750;color:#e8e8e8}input,select,textarea{width:100%;font:inherit;color:#fff;background:#101010;border:1px solid #484848;border-radius:10px;padding:12px;min-height:46px}textarea{resize:vertical;min-height:88px}input:focus,select:focus,textarea:focus{outline:2px solid var(--yellow);border-color:transparent}.field small{color:var(--muted);font-size:11px}.form-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}.fineprint{color:#a8a8a8;font-size:11px;margin:12px 2px 0}.notice{border-left:3px solid var(--yellow);padding:10px 12px;background:#1d1b12;color:#e9e2c7;font-size:12px;border-radius:0 8px 8px 0;margin-top:14px}
+    .how{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.step{border-top:2px solid var(--yellow);padding:12px 10px;background:#181818;border-radius:0 0 12px 12px}.step strong{display:block;font-size:13px;margin-bottom:4px}.step p{font-size:12px;color:var(--muted);margin:0}.footer{margin-top:26px;padding:18px 0 5px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--muted);font-size:12px}.footer strong{color:var(--yellow)}.footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer a{text-decoration:none}
+    @media(max-width:520px){.services{grid-template-columns:1fr}.service{min-height:0;display:grid;grid-template-columns:40px 1fr;column-gap:10px;align-items:center}.service .emoji{grid-row:span 2}.service h3{margin:0 0 3px}.grid{grid-template-columns:1fr}.field.full{grid-column:auto}.form-actions{grid-template-columns:1fr}.how{grid-template-columns:1fr}.step{display:flex;gap:12px;align-items:start}.hero{min-height:370px}.footer{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="topbar">
+      <div class="brand">TIYANG'S<span>LOCAL DELIVERY & ERRANDS</span></div>
+      <div class="pill">📍 Around Mabopane</div>
+    </header>
+    <section class="hero" aria-label="Tiyang's delivery service">
+      <img src="assets/tiyang-yaris.jpg" alt="Tiyang's silver Toyota Yaris" fetchpriority="high">
+      <div class="hero-copy">
+        <div class="eyebrow">Fast • Reliable • Affordable</div>
+        <h1>Your needs.<br><span style="color:var(--yellow)">Delivered.</span></h1>
+        <p>Need something collected, delivered or picked up? Book a local service around Mabopane and nearby areas.</p>
+        <div class="hero-actions"><a class="btn btn-yellow" href="#booking">Book a service ↓</a><a class="btn btn-dark" href="https://wa.me/27632093217" target="_blank" rel="noopener">WhatsApp Tiyang</a></div>
+      </div>
+    </section>
+    <section class="section" id="services">
+      <div class="section-head"><h2>What do you need?</h2><p>Choose a service to start</p></div>
+      <div class="services">
+        <button type="button" class="service" data-service="Parcel delivery"><span class="emoji">📦</span><h3>Parcel delivery</h3><p>Small parcels, documents, online orders and shop collections.</p></button>
+        <button type="button" class="service" data-service="Shopping & errands"><span class="emoji">🛒</span><h3>Shopping & errands</h3><p>Groceries, household items and local collection errands.</p></button>
+        <button type="button" class="service" data-service="Pre-booked transport"><span class="emoji">🚗</span><h3>Pre-booked transport</h3><p>Ask about planned trips to work, appointments or other destinations.</p></button>
+      </div>
+      <p class="hint">Transport bookings are requests only and depend on availability and applicable requirements.</p>
+    </section>
+    <section class="section" id="booking">
+      <div class="section-head"><h2>Request a booking</h2><p>No online payment needed</p></div>
+      <form class="form-card" id="bookingForm">
+        <div class="grid">
+          <div class="field"><label for="customer">Your name *</label><input id="customer" name="customer" autocomplete="name" placeholder="e.g. Thabo" required maxlength="70"></div>
+          <div class="field"><label for="phone">Your phone number *</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="e.g. 071 234 5678" required maxlength="25"></div>
+          <div class="field full"><label for="service">Service needed *</label><select id="service" name="service" required><option value="">Choose a service</option><option>Parcel delivery</option><option>Shopping & errands</option><option>Pre-booked transport</option></select></div>
+          <div class="field"><label for="pickup">Collection / pickup area *</label><input id="pickup" name="pickup" placeholder="e.g. Mabopane Unit X" required maxlength="120"></div>
+          <div class="field"><label for="dropoff">Destination / drop-off *</label><input id="dropoff" name="dropoff" placeholder="Area or address" required maxlength="120"></div>
+          <div class="field"><label for="date">Preferred date</label><input id="date" name="date" type="date"></div>
+          <div class="field"><label for="time">Preferred time</label><input id="time" name="time" type="time"></div>
+          <div class="field full"><label for="details">Extra details</label><textarea id="details" name="details" placeholder="What needs delivering / shopping list / number of passengers, etc. (Please don't include sensitive information.)" maxlength="700"></textarea><small>Tell us what you need. We'll confirm availability and give you a quote.</small></div>
+        </div>
+        <div class="form-actions"><button class="btn btn-wa" type="submit">Send booking on WhatsApp ↗</button><a class="btn btn-dark" href="tel:+27632093217">📞 Call +27 63 209 3217</a></div>
+        <p class="fineprint">Your details are used to prepare your booking message. This app does not store bookings or process payments.</p>
+        <div class="notice">Submitting opens WhatsApp with your booking details ready to send. Please press <strong>Send</strong> in WhatsApp to contact Tiyang.</div>
+      </form>
+    </section>
+    <section class="section">
+      <div class="section-head"><h2>How it works</h2></div>
+      <div class="how"><div class="step"><strong>1. Choose</strong><p>Select a service and fill in the booking details.</p></div><div class="step"><strong>2. WhatsApp</strong><p>Send the request directly to Tiyang.</p></div><div class="step"><strong>3. Confirm</strong><p>Agree on availability, price and timing before the job starts.</p></div></div>
+    </section>
+    <footer class="footer"><div><strong>Tiyang's Local Delivery & Errands</strong><br>Serving Mabopane & surrounding areas</div><div class="footer-links"><a href="https://wa.me/27632093217" target="_blank" rel="noopener">WhatsApp</a><a href="tel:+27632093217">Call</a></div></footer>
+  </main>
+  <script>
+    const serviceSelect = document.getElementById('service');
+    document.querySelectorAll('[data-service]').forEach(card => card.addEventListener('click', () => {
+      serviceSelect.value = card.dataset.service;
+      document.querySelectorAll('[data-service]').forEach(c => c.classList.toggle('selected', c === card));
+      document.getElementById('booking').scrollIntoView({behavior:'smooth', block:'start'});
+    }));
+    const dateField = document.getElementById('date');
+    const localToday = new Date();
+    dateField.min = new Date(localToday.getTime() - localToday.getTimezoneOffset()*60000).toISOString().slice(0,10);
+    document.getElementById('bookingForm').addEventListener('submit', event => {
+      event.preventDefault();
+      const data = new FormData(event.currentTarget);
+      const val = key => String(data.get(key) || '').trim();
+      const lines = [
+        "Hi Tiyang! I'd like to request a booking.",
+        '', 'Name: ' + val('customer'),
+        'My phone: ' + val('phone'),
+        'Service: ' + val('service'),
+        'Pickup / collection: ' + val('pickup'),
+        'Destination / drop-off: ' + val('dropoff'),
+        'Preferred date: ' + (val('date') || 'Flexible'),
+        'Preferred time: ' + (val('time') || 'Flexible'),
+        'Details: ' + (val('details') || 'None added'),
+        '', 'Please confirm availability and send me a quote. Thank you!'
+      ];
+      const url = 'https://wa.me/27632093217?text=' + encodeURIComponent(lines.join('\n'));
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+    if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('./service-worker.js').catch(() => {}));
+    }
+  </script>
+</body>
+</html>
